@@ -1,0 +1,925 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,400;1,500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1px
+}
+
+/* setings */
+
+:root {
+  --cor-primaria: #dfdfdf;
+  --cor-secundaria: #1b1b1b;
+  --cor-terceira: rgb(255, 151, 15);
+}
+
+.ice {
+    color: rgb(49, 121, 255);
+}
+
+.bi {
+    color: orange;
+}
+
+.whiteBg {
+    background-color: var(--cor-primaria) !important;
+}
+
+.whiteFont {
+    color: var(--cor-primaria);
+}
+
+.orangeFont {
+    color: var(--cor-terceira);
+}
+
+.blackFont {
+    color: var(--cor-secundaria) !important;
+}
+
+.bold {
+    font-weight: 800 !important;
+}
+
+.pr {
+    padding-right:200px !important;
+}
+
+.pl {
+    padding-left:200px !important;
+}
+
+
+.font1_2rem {
+    font-size: 1.2rem !important;
+}
+
+.font1rem {
+    font-size: 1rem !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.p {
+    font-size: 1rem !important;
+}
+
+/* ./HOME */
+
+/* Header */
+
+.imagemIntro {
+    background-image: url(../assets/imagemIntro.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.top {
+    background-color: var(--cor-secundaria);
+}
+
+.nav-link {
+    color: white !important; 
+}
+
+.nav-link:hover {
+    color: var(--cor-terceira) !important;
+}
+
+/* Main */
+
+/* Quem somos */
+
+.quemSomos {
+    border-radius: 30px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 8px 8px 8px  #adadad;
+}
+
+
+.quemSomosImg {
+    background-image: url(../assets/equipamentos1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Frase */
+
+#frase  {
+    height: 400px;
+    font-size: 2rem;
+    background-color: var(--cor-secundaria);
+}
+
+/* Area de atuacao */
+
+.occupationArea {
+    height: 100%;
+}
+
+.imageBoxBase {
+    height: 650px;
+}
+
+.imageBox {
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    border-radius: 50px;
+    bottom: 60px;
+    position: relative;
+    background-image: url('../assets/foto_one.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+.boxBorder {
+    width: 175px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 3px solid var(--cor-terceira);
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.box:hover {
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out;
+}
+
+.textArea {
+    line-height: 1;
+}
+
+
+/* Forms */
+
+#form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#formContact {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#InputMensagem {
+    border: 2px solid var(--cor-secundaria);
+    resize: none;
+    height: 300px;
+    background: transparent !important;
+}
+
+#InputMensagemContact {
+    border: 2px solid var(--cor-secundaria);
+    resize: none;
+    height: 200px;
+    background: transparent !important;
+}
+
+.inputForm {
+    border: none !important;
+    border-bottom: 2px solid var(--cor-secundaria) !important;
+    outline: none !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+}
+
+
+.btn {
+    height: 80px;
+    font-size: 2rem !important;
+    color: var(--cor-primaria) !important;
+    background-color: var(--cor-secundaria) !important;
+    border: none !important;
+}
+
+.btn:hover {
+    color: white !important;
+    background-color: var(--cor-terceira) !important;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 3px 4px rgb(158, 158, 158);
+}
+
+
+/* productNav */
+
+/* class */
+
+.productNav {
+    background-color: var(--cor-secundaria);
+    height: 400px;
+}
+
+.navegation li {
+    font-size: 1.3rem !important;
+    margin-top: 10px;
+}
+
+.navegation a {
+    color: var(--cor-primaria) !important;
+}
+
+.navegation a:hover {
+    border-bottom: 2px solid var(--cor-terceira) !important;
+    transition: 0.1s;
+}
+
+/* id */
+
+#btn-small {
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: white !important;
+    background-color: var(--cor-terceira);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#btn-small:hover {
+    color: var(--cor-secundaria) !important;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+    transform: scale(0.9);
+    font-weight: bold;
+}
+
+/* VIA + LINKS  */
+
+.circleIcon {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+}
+
+/* Footer */
+
+#footer {
+    height: 100px;
+    background-color: var(--cor-secundaria);
+}
+
+/* ./PRODUTOS */
+
+/* Titulo do produto */
+
+.titleLayer {
+    height: 500px;
+    background-color: var(--cor-primaria);
+}
+
+.titleProduct {
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.subTitle {
+    font-size: 2rem;
+    font-weight: 400 !important;
+    color: var(--cor-terceira);
+}
+
+/* Amostra dos produtos */
+
+.productLayer {
+    height: 450px;
+}
+
+.linha {
+    height: 100%;
+}
+
+.productImgLayer {
+    bottom: 150px;
+    position: relative;
+}
+
+.productTitle {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+/* Texto sobre o produto */
+
+.productTextLayer {
+    padding-right: 250px !important;
+    padding-left: 50px !important;
+    height: 100%;
+}
+
+.productExtraInfo svg{
+    margin-right: 10px;
+}   
+
+/* Detalhe sobre os produtos */
+
+.detailLayer {
+    height: 100%;
+    background-color: var(--cor-secundaria);
+}
+
+.detail {
+    height: 250px;
+    background-color: white;
+}
+
+.imageInfo {
+    background-image: url('../assets/foto_one.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+.textInfo {
+    text-align: right;
+}
+
+
+/* ./EMPRESA */
+
+.chiller_um {
+    background-image: url('');
+}
+
+.chiller_dois {
+    background-image: url('');
+}
+
+.chiller_tres {
+    background-image: url('');
+}
+
+.chiller_quatro {
+    background-image: url('');
+}
+
+.chiller_cinco {
+    background-image: url('');
+}
+
+.empresaLayer {
+    height: 600px;
+    background-color: var(--cor-primaria);
+}
+
+
+.empresaImg {
+    background-image: url('../assets/foto_one.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+.titleEmpresa {
+    font-size: 2rem;
+}
+
+.textEmpresa {
+    text-align: right !important;
+}
+
+.visao {
+    background-image: url('../assets/visao.jpg');
+}
+
+.missao {
+    background-image: url('../assets/missao.jpg');
+}
+
+.valores {
+    background-image: url('../assets/valores.jpg');
+}
+
+.diferenca {
+    background-image: url('../assets/diferenca.jpg');
+}
+
+/* MAP */
+
+.map {
+    height: 500px;
+}
+
+.map iframe {
+    height: 100%;
+    width: 100%;
+}
+
+/* ./CONTATO */
+
+.textContact {
+    height: 600px;
+}
+
+.formBase {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.textFormContact {
+    font-size: 1rem;
+}
+
+.infosContact {
+    background-color: var(--cor-secundaria);
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.linkContact {
+    height: 50px;
+    width: 50px;
+    background-color: var(--cor-primaria);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkContact:hover {
+    background-color: var(--cor-terceira) !important;
+    color: white !important;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transform: scale(0.9);
+}
+
+/* imagem do contato */
+
+#imageContact{
+    background-image: url('../assets/manContact.png');
+    background-size: cover;
+    background-position: top; 
+    height: 800px;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px) {
+    .navegation li {
+    font-size: 1.2rem !important;
+    }
+    
+
+    .actionText {
+        font-size: 1rem !important;
+    }
+
+    .pr {
+        padding-right: 0px !important;
+    }
+
+    .pl {
+        padding-left: 0px !important;
+    }
+
+    .empresaText {
+        font-size: 0.7rem;
+    }
+
+    #formContact {
+        width: 350px;
+    }
+
+    #imagemProduto {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .productImgLayer {
+        bottom: 30px;
+        position: relative;
+    }
+
+    #productImg {
+        width: 400px;
+    }
+
+    .productTextLayer {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        font-size: 1.2rem;
+    }
+    
+    .linha {
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+    }
+
+    .detail {
+        height: 200px !important;
+        font-size: 1rem;
+        padding: 0 !important;
+    }
+
+    .imageInfo {
+        height: 200px !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .imageBox {
+        border-radius: 20px;
+    }
+
+    .boxBorder {
+        width: 139px !important;
+    }
+
+    .box {
+        height: 120px;
+    }
+    
+    .navegation li {
+    font-size: 0.9rem !important;
+    }
+
+    .entreEmContato {
+        font-size: 0.6rem;
+    }
+
+    .entreEmContato span {
+        font-size: 0.8rem;
+    }
+
+    .pr {
+        padding-right: 0px !important;
+    }
+
+    .pl {
+        padding-left: 0px !important;
+    }
+
+    .empresaText {
+        font-size: 0.7rem;
+    }
+
+     #imageContact {
+        height: 400px;
+    }
+
+    .infosContact {
+        width: 354px;
+        height: 422px;
+    }
+
+    .productLayer {
+        height: 100%;
+    }
+
+    #imagemProduto {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .productImgLayer {
+        bottom: 20px;
+        position: relative;
+    }
+
+    #productImg {
+        width: 300px;
+    }
+
+    .productTextLayer {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        font-size: 0.9rem;
+    }
+    
+    .linha {
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+    }
+
+    .detail {
+        height: 200px !important;
+        font-size: 0.7rem;
+        padding: 0 !important;
+    }
+
+    .imageInfo {
+        height: 200px !important;
+    }
+
+    .detail span {
+        margin-right: 5px;
+    }
+    
+    .quemSomosText {
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .productNav {
+        height: 500px;
+    }
+
+    .entreEmContato {
+        text-align: center;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .cabecalho img {
+        width: 90px;
+    }
+
+    .quemSomosImg {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .quemSomos {
+        height: 540px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    #frase h1 {
+        font-size: 1.4rem;
+    }
+
+    .occupationArea h1 {
+        text-align: center;
+    }
+
+    #form p {
+        font-size: 0.9rem;
+    }
+
+    .contactMini {
+        padding: 20px;
+    }
+
+    .contactMini img {
+        width: 120px;
+    }
+
+    #InputMensagem {
+        height: 200px;
+    }
+
+    .titleEmpresa {
+        padding: 0 !important;
+    }
+
+    .empresaImg {
+        height: 500px;
+    }
+
+    .empresaText {
+        height: 300px;
+    }
+
+    .empresaLayer {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .reverso {
+        flex-direction: column-reverse;
+    }
+
+    .pl {
+        padding: 0 !important;
+    }
+
+    .pr {
+        padding: 0 !important;
+    }
+
+    #imageContact {
+        height: 360px;
+    }
+
+    .titleLayer {
+        height: 300px;
+    }
+
+    .titleProduct {
+        font-size: 4rem;
+    }
+
+    #formBase {
+        width: 500px !important;
+        padding: 0;
+    }
+
+    .productLayer {
+        height: 100%;
+    }
+
+    #imagemProduto {
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .productImgLayer {
+        bottom: 20px;
+        position: relative;
+    }
+
+    #productImg {
+        width: 300px;
+    }
+
+    .productTextLayer {
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        font-size: 1rem;
+    }
+    
+    .linha {
+        margin-bottom: 30px;
+    }
+
+    .detail {
+        height: 100% !important;
+        font-size: 0.7rem;
+        padding: 0 !important;
+    }
+
+    .detail span {
+        margin-right: 5px;
+    }
+
+    .imageInfo {
+        height: 140px !important;
+    }
+
+    .textInfo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .textInfo span {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+/* CHILLER */
+
+#chillerum {
+    background-image: url('../assets/seis.png') !important;
+}
+
+#chillerdois {
+    background-image: url('../assets/quatro.png') !important;
+}
+
+#chillertres {
+    background-image: url('../assets/tres.png') !important;
+}
+
+#chillerquatro {
+    background-image: url('../assets/dois.png') !important;
+}
+
+#chillercinco {
+    background-image: url('../assets/um.png') !important;
+}
+
+/* CHILLER CLINIC */
+
+#chillerclinicum {
+    background-image: url('../assets/nove.png') !important;
+}
+
+#chillerclinicdois {
+    background-image: url('../assets/oito.png') !important;
+}
+
+#chillerclinictres {
+    background-image: url('../assets/dez.png') !important;
+}
+
+#chillerclinicquatro {
+    background-image: url('../assets/sete.png') !important;
+}
+
+#chillercliniccinco {
+    background-image: url('../assets/cinco.png') !important;
+}
+
+/* TERMOCHILLER */
+
+#termochillerum {
+    background-image: url('../assets/vintequatro.png') !important;
+}
+
+#termochillerdois {
+    background-image: url('../assets/nove.png') !important;
+}
+
+#termochillertres {
+    background-image: url('../assets/oito.png') !important;
+}
+
+#termochillerquatro {
+    background-image: url('../assets/quinze.png') !important;
+}
+
+/* REFRIAMENTO DO AR */
+
+#resfriamentodoarum {
+    background-image: url('../assets/quatorze.png') !important;
+}
+
+#resfriamentodoardois {
+    background-image: url('../assets/treze.png') !important;
+}
+
+/* TERMOREGULADOR */
+
+#termoreguladorum {
+    background-image: url('../assets/vinte.png') !important;
+}
+
+#termoreguladordois {
+    background-image: url('../assets/dezesseis.png') !important;
+}
+
+#termoreguladortres {
+    background-image: url('../assets/dezoito.png') !important;
+}
+
+#termoreguladorquatro {
+    background-image: url('../assets/dezessete.png') !important;
+}
+
+/* UNIDADE DE AGUA GELADA */
+
+#unidadedeaguageladaum {
+    background-image: url('../assets/vintequatro.png') !important;
+}
+
+#unidadedeaguageladadois {
+    background-image: url('../assets/nove.png') !important;
+}
+
+#unidadedeaguageladatres {
+    background-image: url('../assets/oito.png') !important;
+}
+
+#unidadedeaguageladaquatro{
+    background-image: url('../assets/vintecinco.png') !important;
+}
+
+/* TORRE DE RESFRIAMENTO */
+
+#torrederesfriamentoum {
+    background-image: url('../assets/vintetres.png') !important;
+}
+
+#torrederesfriamentodois {
+    background-image: url('../assets/vinteum.png') !important;
+}
+
+#torrederesfriamentotres {
+    background-image: url('../assets/vintedois.png') !important;
+}
