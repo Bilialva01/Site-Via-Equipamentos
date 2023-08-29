@@ -104,17 +104,25 @@ a {
 
 .quemSomos {
     border-radius: 30px;
-    height: 500px;
+    height: 100%;
     overflow: hidden;
     box-shadow: 8px 8px 8px  #adadad;
 }
 
-
-.quemSomosImg {
-    background-image: url(../assets/equipamentos1.jpg);
-    background-size: cover;
-    background-position: center;
+.quemSomosText {
+    padding: 30px !important;
 }
+
+.carousel-item {
+      object-fit: cover !important;
+      object-position: center !important;
+}
+
+
+.carousel-inner {
+    height: 100%;
+}
+
 
 
 /* Frase */
@@ -488,9 +496,12 @@ a {
 
 @media screen and (max-width: 1024px) {
     .navegation li {
-    font-size: 1.2rem !important;
+        font-size: 1.2rem !important;
     }
     
+    .imagemcinco {
+        width: 200px !important;
+    }
 
     .actionText {
         font-size: 1rem !important;
@@ -549,6 +560,10 @@ a {
         height: 200px !important;
     }
 
+    .carousel-inner {
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -643,14 +658,63 @@ a {
     }
     
     .quemSomosText {
-        margin-left: 20px;
+        padding: 30px !important;
+        width: 50% !important;
+        height: 100% !important;
     }
+
+    .quemSomos {
+        height: 100% !important;
+    }
+
+    .quemSomosImg {
+        height: 100% !important;
+        width: 50% !important;
+    }
+
 }
 
 
 @media screen and (max-width: 425px) {
+    .nav-item {
+        font-size: 0.6rem;
+    }
+
+    .boxBorder {
+        width: 135px !important;
+    }
+
+    .t-none {
+        margin-top: 0 !important;
+    }
+
+    .infoEmail {
+        font-size: 0.7rem;
+    }
+
+    .infoNumber {
+        font-size: 0.7rem;
+    }
+
+    .box {
+        height: 120px !important;
+        font-size: 0.3rem !important;
+    }
+
+    .actionText {
+        font-size: 0.9rem !important;
+    }
+    
     .productNav {
         height: 500px;
+    }
+
+    .navegation li {
+        font-size: 0.6rem !important;
+    }
+
+    .fraseText {
+        font-size: 1.2rem !important;
     }
 
     .entreEmContato {
@@ -668,15 +732,26 @@ a {
     }
 
     .quemSomosImg {
-        height: 300px;
-        margin-bottom: 20px;
+        height:50% !important;
+        width: 100% !important;
+    }
+
+    .quemSomosText {
+        height:50% !important;
+        padding: 30px !important;
+        width: 100% !important;
+    }
+
+    .linhaAreas {
+        justify-content: center;
+        align-items: center;
     }
 
     .quemSomos {
-        height: 540px;
-        padding-bottom: 20px;
+        height: 100%;
         border-radius: 10px;
-        width: 90%;
+        width: 100%;
+        flex-direction: column;
     }
 
     #frase h1 {
@@ -741,7 +816,7 @@ a {
     }
 
     .titleProduct {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     #formBase {
@@ -800,6 +875,7 @@ a {
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
+
 }
 
 /* CHILLER */
